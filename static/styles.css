@@ -1,0 +1,338 @@
+html,
+body,
+header{
+    height: 100%;
+}
+/* --------------------------------------------------------------*/
+/* style for navbar */
+#navbar-brand{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  line-height: 60px;
+}
+
+.bg-light{
+  background-color:#32136C !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 25px;
+    margin-right: 5px;
+    color: white;
+}
+.navbar-light .fa-navicon{
+  color: white;
+  font-size: 30px;
+}
+/* --------------------------------------------------------------*/
+
+/* style for header of home page */
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=751&q=80")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* --------------------------------------------------------------*/
+
+/* style for header of other pages */
+.info-header{
+  height: auto;
+}
+
+#page-intro {
+  height: 100%;
+  padding-top: 50px;
+}
+
+#page-intro {
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://previews.123rf.com/images/milanaadams/milanaadams1907/milanaadams190700217/127840415-welcome-back-to-school-banner-background-with-a-pile-of-colorful-pencils-header-for-website-magazine.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+hr{
+  border-color: inherit;
+}
+/* --------------------------------------------------------------*/
+
+/* breadcrumb class */
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: transparent;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #ff5722;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #ffff00;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #1aff1a;
+  text-decoration: none;
+}
+
+.disabled-text{
+  color: #ffffcc;
+}
+/* bradcrumb class over */
+/* --------------------------------------------------------------*/
+
+/* style for cards view of standard section */
+.card-std{
+    border-radius: 4px;
+    background: #b3d9ff;
+    box-shadow: 0 6px 10px #ff66cc, 0 0 6px #ff66cc;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 14px 14px 14px;
+    cursor:default;
+}
+
+.card-std:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #800055, 0 4px 8px #800055;
+}
+
+.box-shadow-hover{
+  background: #d9d9d9;
+  box-shadow: 0 2px 40px 0 #737373, 0 2px 10px 0 #737373;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.box-shadow-hover:hover{
+  transform: scale(1.05);
+  box-shadow: 0 2px 40px 0 #0d0d0d, 0 2px 10px 0 #0d0d0d;
+}
+/* --------------------------------------------------------------*/
+
+/* style for cards view of faculty section */
+.card-staff{
+    border-radius: 4px;
+    background: #ddff99;
+    box-shadow: 0 6px 10px #8080ff, 0 0 6px #8080ff;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 14px 14px 14px;
+    cursor:default;
+}
+
+.card-staff:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #3333ff, 0 4px 8px #3333ff;
+}
+/* --------------------------------------------------------------*/
+
+/* get subject, lesson, lectures and files button inside these cards*/
+.button-les {
+  border-radius: 4px;
+  background-color: #00bcd4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-les span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-les span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-les:hover span {
+  padding-right: 25px;
+}
+
+.button-les:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* --------------------------------------------------------------*/
+
+/*login and register button inside standard card*/
+.card-std .card-body a{
+  margin: 3px;
+}
+.card-std .card-body a:hover{
+  transition: 0.3s;
+  transform: scale(1.09);
+}
+/* --------------------------------------------------------------*/
+
+/* style for class time table */
+#class-time-table{
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+#class-time-table, #class-time-table th, #class-time-table td{
+  border:1px solid black;
+}
+#class-time-table td{
+  padding: 5px 10px;
+}
+/* --------------------------------------------------------------*/
+
+/* style for responsive video */
+#player-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #000;
+  z-index: 999;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* --------------------------------------------------------------*/
+
+/* style for Event Section */
+#event-section {
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wonderfulengineering.com/wp-content/uploads/2016/01/nature-wallpapers-38.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#event-section .card-event{
+  height: 450px;
+  width: 450px;
+}
+#event-section .card-event img{
+width: 100%;
+height: 100%;
+object-fit: fill;
+position: absolute;
+top: 0;
+left: 0;
+}
+.event-mask{
+  width: 100%;
+  height: auto;
+  left: auto;
+  bottom: auto;
+  position:relative;
+  z-index: 3;
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+.event-mask #a, #event-section #a{
+  margin: 3px;
+}
+.event-mask #a:hover, #event-section #a:hover{
+  transition: 0.3s;
+  transform: scale(1.09);
+}
+/* --------------------------------------------------------------*/
+
+/* style for footer section */
+footer{
+  background-color: #32136C;
+  color: white;
+}
+#a{
+  text-align: justify;
+}
+.social h6{
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.social{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 0px;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+}
+.social a{
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  line-height: 39px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #05ff05;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
+  margin: 10px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.social a:hover{
+  opacity: 0.9;
+  box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
+}
+#facebook{
+  background: #3B5998;
+  color: white;
+}
+#twitter{
+  background: #55ACEE;
+  color: white;
+}
+#instagram{
+  background: #C13584;
+  color: white;
+}
+#linkedin{
+  background: #007bb5;
+  color: white;
+}
+#youtube{
+  background: #bb0000;
+  color: white;
+}
+#fb{
+  background: #3B5998;
+  color: white;
+}
+/* --------------------------------------------------------------*/
