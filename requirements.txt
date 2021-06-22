@@ -14,7 +14,7 @@ pycodestyle==2.6.0
 pydocstyle==6.0.0
 pyflakes==2.2.0
 pylint==2.8.2
-pyls-mypy==0.1.8
+pyls-mypy==0.1.8+6.g3b105b4
 python-jsonrpc-server==0.4.0
 python-language-server==0.36.2
 rope==0.19.0
