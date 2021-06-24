@@ -29,6 +29,17 @@ header{
   color: white;
   font-size: 30px;
 }
+@media (max-width: 480px){
+    .navbar-toggler{
+        display: block;
+    }
+    .collapse{
+        display: none;
+    }
+    .collapse.show{
+        display: block;
+    }
+}
 /* --------------------------------------------------------------*/
 
 /* style for header of home page */
@@ -43,6 +54,16 @@ header{
     -o-background-size: cover;
     background-size: cover;
 }
+@media screen and (max-width: 480px){
+    .home-header{
+        height: auto;
+    }
+    #intro {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    }
+}
 /* --------------------------------------------------------------*/
 
 /* style for header of other pages */
@@ -52,7 +73,7 @@ header{
 
 #page-intro {
   height: 100%;
-  padding-top: 50px;
+  padding-top:50px;
 }
 
 #page-intro {
@@ -61,6 +82,19 @@ header{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+@media screen and (max-width: 480px){
+    .info-header{
+        height: auto;
+    }
+    #page-intro {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    }
+    .info-header h2{
+        font-size: 40px;
+    }
 }
 
 hr{
@@ -243,12 +277,12 @@ video {
   width: 450px;
 }
 #event-section .card-event img{
-width: 100%;
-height: 100%;
-object-fit: fill;
-position: absolute;
-top: 0;
-left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .event-mask{
   width: 100%;
@@ -329,10 +363,6 @@ footer{
 }
 #youtube{
   background: #bb0000;
-  color: white;
-}
-#fb{
-  background: #3B5998;
   color: white;
 }
 /* --------------------------------------------------------------*/
