@@ -35,21 +35,25 @@
                                  </li>
                                  <li class="nav-item">
                                     <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
-                                 </li>                                 
+                                 </li>
+                                 {% if user.is_superuser %}
                                  <li class="nav-item ">
                                     <a class="nav-link" href="{% url 'admin:index' %}">Admin</span> </a>
                                  </li>
+                                 {%endif%}
+                                 {% if user.is_authenticated %}
                                      <li class="nav-item  ">
                                       <a class="nav-link" href="{% url 'user_logout' %}">Logout</a>
-                                     </li>                                 
+                                     </li>
+                                 {% else %}
                                      <li class="nav-item ">
                                          <a class="nav-link" href="{% url 'user_login' %}">Login</a>
                                      </li>
                                      <li class="nav-item " >
                                         <a class="nav-link" href="{% url 'register' %}">Register</span> </a>
                                      </li>
+                                 {% endif %}
                                  
-
                          </ul>
                        </div>
                  </div>
@@ -88,8 +92,7 @@
               <a id="twitter" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
               <a id="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
               <a id="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-              <a id="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-              
+              <a id="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>              
           </div>
           <div class="footer-copyright text-center py-3">
               <p>© 2021 Copyright: Creative Public School</p>
