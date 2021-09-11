@@ -123,7 +123,19 @@ ul.breadcrumb li+li:before {
   content: "/\00a0";
 }
 
+ul.breadcrumb li a {
+  color: #ffff00;
+  text-decoration: none;
+}
 
+ul.breadcrumb li a:hover {
+  color: #1aff1a;
+  text-decoration: none;
+}
+
+.disabled-text{
+  color: #ffffcc;
+}
 /* bradcrumb class over */
 /* --------------------------------------------------------------*/
 
@@ -137,7 +149,21 @@ ul.breadcrumb li+li:before {
     cursor:default;
 }
 
+.card-std:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #800055, 0 4px 8px #800055;
+}
 
+.box-shadow-hover{
+  background: #d9d9d9;
+  box-shadow: 0 2px 40px 0 #737373, 0 2px 10px 0 #737373;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.box-shadow-hover:hover{
+  transform: scale(1.05);
+  box-shadow: 0 2px 40px 0 #0d0d0d, 0 2px 10px 0 #0d0d0d;
+}
 /* --------------------------------------------------------------*/
 
 /* style for cards view of faculty section */
@@ -171,7 +197,30 @@ ul.breadcrumb li+li:before {
   margin: 5px;
 }
 
+.button-les span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.button-les span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-les:hover span {
+  padding-right: 25px;
+}
+
+.button-les:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 /* --------------------------------------------------------------*/
 
 /*login and register button inside standard card*/
@@ -192,7 +241,9 @@ ul.breadcrumb li+li:before {
 #class-time-table, #class-time-table th, #class-time-table td{
   border:1px solid black;
 }
-
+#class-time-table td{
+  padding: 5px 10px;
+}
 /* --------------------------------------------------------------*/
 
 /* style for responsive video */
@@ -221,7 +272,18 @@ video {
     -o-background-size: cover;
     background-size: cover;
 }
-
+#event-section .card-event{
+  height: 450px;
+  width: 450px;
+}
+#event-section .card-event img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .event-mask{
   width: 100%;
   height: auto;
