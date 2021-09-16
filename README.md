@@ -4,7 +4,7 @@ Built using html, css and django framework with its inbuilt database Sqlite.
 
 In this website you can access the study material and events as student and parents while admin and teachers have access to update all these stuff on the website.
 
-You can visit the site from the link {"http://sujitmanagre.pythonanywhere.com/"}.
+You can visit the site from the link ("http://sujitmanagre.pythonanywhere.com/").
 
 Some of the SS of website are attached below.
 
